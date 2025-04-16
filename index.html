@@ -4,85 +4,170 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ethnus Index</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Quicksand:wght@300;500&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
             text-align: center;
-            margin: 20px;
+            box-sizing: border-box;
+        }
+        .main-container {
+            border: 10px solid #b8156c;
+            border-radius: 15px;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background: #ffffff;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 3rem;
+            font-weight: 600;
+            color: #1d1d1d;
+            margin-top: 30px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            font-size: 1.4rem;
+            font-weight: 500;
+            color: #d5006d;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
         }
         .container {
             display: flex;
             flex-direction: column;
             align-items: center;
+            padding: 40px 20px;
+            background: linear-gradient(145deg, #fff1f3, #f8c9d0);
+            border-radius: 10px;
         }
         .section {
+            background-color: white;
+            margin-bottom: 40px;
+            padding: 30px;
+            width: 80%;
+            max-width: 700px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-in-out;
+            overflow: hidden;
+        }
+        .section:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        }
+        .section h3 {
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 600;
+            font-size: 1.6rem;
+            color: #e6007a;
             margin-bottom: 20px;
+            transition: color 0.3s ease;
+        }
+        .section h3:hover {
+            color: #ff3399;
         }
         .btn {
-            margin: 10px;
-            padding: 10px 20px;
+            margin: 12px;
+            padding: 12px 24px;
             font-size: 16px;
-            background-color: palevioletred;
+            font-weight: 500;
+            background-color: #c61975;
             color: white;
             border: none;
-            cursor: pointer;
+            border-radius: 30px;
             text-decoration: none;
             display: inline-block;
-            border-radius: 5px;
+            transition: all 0.3s ease;
         }
         .btn:hover {
-            background-color: pink;
+            background-color: #a22363;
+            transform: scale(1.05);
+        }
+        .btn:active {
+            background-color: #cc0066;
+        }
+        .footer {
+            font-size: 0.9rem;
+            color: #888;
+            margin-top: 50px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            .section {
+                width: 100%;
+                padding: 20px;
+            }
+            .btn {
+                font-size: 14px;
+                padding: 10px 20px;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>Ethnus Assignments</h1>
-    <h2>Name: Sai Shruti Pandey</h2>
-    <h2>Registration Number: 22BCE10115</h2>
-    
-    <div class="container">
-        <div class="section">
-        <h3>HTML Tasks</h3>
-        <a class="btn" href="HTML Task 1.html">HTML Task 1</a>
-        <a class="btn" href="HTML Task 2.html">HTML Task 2</a>
-        <a class="btn" href="HTML Task 3.html">HTML Task 3</a>
-        <a class="btn" href="HTML Task 4.html">HTML Task 4</a>
-        <a class="btn" href="HTML Task 5.html">HTML Task 5</a>
+
+    <div class="main-container">
+        <h1>Ethnus Assignments</h1>
+        <h2>Name: Sai Shruti Pandey</h2>
+        <h2>Registration Number: 22BCE10115</h2>
+
+        <div class="container">
+            <div class="section">
+                <h3>HTML Tasks</h3>
+                <a class="btn" href="HTML Task 1.html">HTML Task 1</a>
+                <a class="btn" href="HTML Task 2.html">HTML Task 2</a>
+                <a class="btn" href="HTML Task 3.html">HTML Task 3</a>
+                <a class="btn" href="HTML Task 4.html">HTML Task 4</a>
+                <a class="btn" href="HTML Task 5.html">HTML Task 5</a>
+            </div>
+
+            <div class="section">
+                <h3>CSS Tasks</h3>
+                <a class="btn" href="CSS Task 1.html">CSS Task 1</a>
+                <a class="btn" href="CSS Task 2.html">CSS Task 2</a>
+                <a class="btn" href="CSS Task 3.html">CSS Task 3</a>
+                <a class="btn" href="CSS Task 4.html">CSS Task 4</a>
+                <a class="btn" href="CSS Task 5.html">CSS Task 5</a>
+                <a class="btn" href="CSS Task 6.html">CSS Task 6</a>
+                <a class="btn" href="CSS Task 7.html">CSS Task 7</a>
+            </div>
+
+            <div class="section">
+                <h3>Bootstrap Tasks</h3>
+                <a class="btn" href="BS Task 1.html">BS Task 1</a>
+                <a class="btn" href="BS Task 2.html">BS Task 2</a>
+                <a class="btn" href="BS Task 3.html">BS Task 3</a>
+                <a class="btn" href="BS Task 4.html">BS Task 4</a>
+                <a class="btn" href="BS Task 5.html">BS Task 5</a>
+                <a class="btn" href="BS Task 6.html">BS Task 6</a>
+            </div>
+
+            <div class="section">
+                <h3>Javascript Tasks</h3>
+                <a class="btn" href="Task 1.html">JS Task 1</a>
+                <a class="btn" href="Task 2.html">JS Task 2</a>
+                <a class="btn" href="Task 3.html">JS Task 3</a>
+                <a class="btn" href="Task 4.html">JS Task 4</a>
+                <a class="btn" href="Task 5.html">JS Task 5</a>
+                <a class="btn" href="Task 6.html">JS Task 6</a>
+                <a class="btn" href="Task 7.html">JS Task 7</a>
+                <a class="btn" href="Task 8.html">JS Task 8</a>
+                <a class="btn" href="Task 9 -1.html">JS Task 9-1</a>
+                <a class="btn" href="Task 9-2.html">JS Task 9-2</a>
+                <a class="btn" href="Task9-3.html">JS Task 9-3</a>
+            </div>
+        </div>
+
     </div>
 
-        <div class="section">
-            <h3>CSS Tasks</h3>
-            <a class="btn" href="CSS Task 1.html">CSS Task 1</a>
-            <a class="btn" href="CSS Task 2.html">CSS Task 2</a>
-            <a class="btn" href="CSS Task 3.html">CSS Task 3</a>
-            <a class="btn" href="CSS Task 4.html">CSS Task 4</a>
-            <a class="btn" href="CSS Task 5.html">CSS Task 5</a>
-            <a class="btn" href="CSS Task 6.html">CSS Task 6</a>
-            <a class="btn" href="CSS Task 7.html">CSS Task 7</a>
-        </div>
-        <div class="section">
-            <h3>Bootstrap Tasks</h3>
-            <a class="btn" href="BS Task 1.html">BS Task 1</a>
-            <a class="btn" href="BS Task 2.html">BS Task 2</a>
-            <a class="btn" href="BS Task 3.html">BS Task 3</a>
-            <a class="btn" href="BS Task 4.html">BS Task 4</a>
-            <a class="btn" href="BS Task 5.html">BS Task 5</a>
-            <a class="btn" href="BS Task 6.html">BS Task 6</a>
-        </div>
-        <div class="section">
-            <h3>Javascript Tasks</h3>
-            <a class="btn" href="Task 1.html">JS Task 1</a>
-            <a class="btn" href="Task 2.html">JS Task 2</a>
-            <a class="btn" href="Task 3.html">JS Task 3</a>
-            <a class="btn" href="Task 4.html">JS Task 4</a>
-            <a class="btn" href="Task 5.html">JS Task 5</a>
-            <a class="btn" href="Task 6.html">JS Task 6</a>
-            <a class="btn" href="Task 7.html">JS Task 7</a>
-            <a class="btn" href="Task 8.html">JS Task 8</a>
-            <a class="btn" href="Task 9 -1.html">JS Task 9-1</a>
-            <a class="btn" href="Task 9-2.html">JS Task 9-2</a>
-            <a class="btn" href="Task 9-3.html">JS Task 9-3</a>
-        </div>
-    </div>
 </body>
 </html>
+
