@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registration Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to top left, #fceabb, #f8b500, #fceabb, #ec008c);
+      background-size: 400% 400%;
+      animation: gradientBG 10s ease infinite;
+    }
+
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    .container {
+      max-width: 700px;
+      background: rgba(255, 255, 255, 0.95);
+      padding: 30px;
+      border-radius: 10px;
+      margin: 50px auto;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    h2 {
+      text-align: center;
+      color: blue;
+      margin-bottom: 30px;
+    }
+
+    label {
+      display: inline-block;
+      width: 150px;
+      vertical-align: top;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="number"],
+    select,
+    textarea {
+      width: 60%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    textarea {
+      height: 80px;
+    }
+
+    .error {
+      color: red;
+      font-size: 14px;
+      margin-left: 10px;
+    }
+
+    .gender, .languages {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    .declaration {
+      margin-left: 150px;
+      margin-top: 10px;
+    }
+
+    .submit-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .submit-btn {
+      background-color: red;
+      color: white;
+      padding: 10px 30px;
+      border: none;
+      border-radius: 30px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .submit-btn:hover {
+      background-color: darkred;
+    }
+
+    .login {
+      text-align: right;
+      margin-top: 20px;
+    }
+
+    .login a {
+      color: blue;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Registration form</h2>
+    <form id="registrationForm">
+      <label>First Name:</label><input type="text" id="firstName"><span class="error">POOR</span><br>
+      <label>Last Name:</label><input type="text" id="lastName"><span class="error">POOR</span><br>
+      <label>Email:</label><input type="email" id="email"><span class="error">POOR</span><br>
+      <label>Password:</label><input type="password" id="password"><span class="error">POOR</span><br>
+      <label>Re-enter Password:</label><input type="password" id="repassword"><span class="error">POOR OR MISMATCH</span><br>
+
+      <label>Gender:</label>
+      <input type="radio" name="gender" value="Male" class="gender">Male
+      <input type="radio" name="gender" value="Female" class="gender">Female<br>
+
+      <label>Age:</label><input type="number" id="age"><span class="error">POOR</span><br>
+      <label>Phone Number:</label><input type="text" id="phoneNumber"><span class="error">POOR</span><br>
+      <label>Address:</label><textarea id="address"></textarea><span class="error">POOR</span><br>
+      <label>State:</label><input type="text" id="state"><span class="error">POOR</span><br>
+
+      <label>Country:</label>
+      <select id="country">
+        <option>Choose your country</option>
+        <option>USA</option>
+        <option>India</option>
+        <option>UK</option>
+      </select><br>
+
+      <label>Languages known:</label>
+      <input type="checkbox" class="languages" value="English">English
+      <input type="checkbox" class="languages" value="Kannada">Kannada
+      <input type="checkbox" class="languages" value="Hindi">Hindi
+      <input type="checkbox" class="languages" value="Telugu">Telugu<br>
+
+      <div class="declaration">
+        <input type="checkbox" id="declaration"> Hereby I declare all the given details are true
+      </div>
+
+      <div class="login">
+        Log in to <a href="#">Ethnus</a> website
+      </div>
+
+      <div class="submit-container">
+        <button type="submit" class="submit-btn">REGISTER</button>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById("registrationForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+      alert("Form submitted successfully!");
+    });
+  </script>
+</body>
+</html>
