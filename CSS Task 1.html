@@ -4,7 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Styled Table</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        table {
+            width: 60%;
+            margin: auto;
+            border-collapse: separate;
+            border-spacing: 5px;
+            border: 2px solid black;
+            background-color: lightblue;
+            border-radius: 10px;
+        }
+        
+        th, td {
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        
+        th {
+            font-weight: bold;
+        }
+    </style>
+    
 </head>
 <body>
 
@@ -34,25 +56,3 @@
 </body>
 </html>
 
-
-#css 
-table {
-    width: 60%;
-    margin: auto;
-    border-collapse: separate;
-    border-spacing: 5px;
-    border: 2px solid black;
-    background-color: lightblue;
-    border-radius: 10px;
-}
-
-th, td {
-    border: 2px solid black;
-    padding: 10px;
-    text-align: center;
-    border-radius: 10px;
-}
-
-th {
-    font-weight: bold;
-}
