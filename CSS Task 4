@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoverable Sidenav Buttons</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="sidenav">
+        <a href="#" class="btn green">Home</a>
+        <a href="#" class="btn blue">Services</a>
+        <a href="#" class="btn red">Contact</a>
+        <a href="#" class="btn gray">About</a>
+    </div>
+
+    <div class="main-content">
+        <h2>Hoverable Sidenav Buttons</h2>
+        <p>Hover over the buttons in the left side navigation to open them.</p>
+    </div>
+
+</body>
+</html>
+
+
+/*CSS*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.sidenav {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    padding: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    margin: 5px;
+    transition: width 0.3s, padding-left 0.3s;
+    width: 60px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.btn:hover {
+    width: 200px;
+    padding-left: 20px;
+}
+
+.green { background-color: #008040; }
+.blue { background-color: #007BFF; }
+.red { background-color: #E74C3C; }
+.gray { background-color: #4D4D4D; }
+
+.main-content {
+    margin-left: 80px;
+    padding: 20px;
+    flex-grow: 1;
+}

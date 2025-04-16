@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="login-container">
+        <img src="avatar.png" alt="User Avatar" class="avatar">
+        
+        <form>
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Enter Username" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter Password" required>
+
+            <button type="submit" class="login-btn">Login</button>
+
+            <div class="options">
+                <label>
+                    <input type="checkbox"> Remember me
+                </label>
+            </div>
+
+            <div class="footer">
+                <button type="button" class="cancel-btn">Cancel</button>
+                <a href="#">Forgot <span class="highlight">password?</span></a>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
+
+/* CSS */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background: white;
+    padding: 30px;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.avatar {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.login-btn {
+    background: green;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background: darkgreen;
+}
+
+.options {
+    margin: 10px 0;
+    text-align: left;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.cancel-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.cancel-btn:hover {
+    background: darkred;
+}
+
+.highlight {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}

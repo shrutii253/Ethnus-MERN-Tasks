@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bars</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h2>Vertical Navigation Bar</h2>
+    <div class="vertical-nav">
+        <a href="#" class="active">Home</a>
+        <a href="#">Java</a>
+        <a href="#">CSS</a>
+        <a href="#">HTML</a>
+        <a href="#">Bootstrap</a>
+    </div>
+
+    <h2>Horizontal Navigation Bar</h2>
+    <div class="horizontal-nav">
+        <a href="#" class="active">Home</a>
+        <a href="#">Java</a>
+        <a href="#">HTML</a>
+        <a href="#">CSS</a>
+    </div>
+
+</body>
+</html>
+
+
+/* CSS */
+/* Vertical Navigation Bar */
+.vertical-nav {
+    width: 200px;
+    border: 2px solid black;
+}
+
+.vertical-nav a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: blue;
+    background-color: lightblue;
+    border-bottom: 2px solid white;
+}
+
+.vertical-nav a.active {
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+}
+
+.vertical-nav a:hover {
+    background-color: darkblue;
+    color: white;
+}
+
+/* Horizontal Navigation Bar */
+.horizontal-nav {
+    display: flex;
+    border: 2px solid black;
+    width: fit-content;
+}
+
+.horizontal-nav a {
+    padding: 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: blue;
+    background-color: lightgray;
+    border-right: 2px solid white;
+}
+
+.horizontal-nav a.active {
+    background-color: gray;
+    color: white;
+    font-weight: bold;
+}
+
+.horizontal-nav a:hover {
+    background-color: darkgray;
+    color: white;
+}
