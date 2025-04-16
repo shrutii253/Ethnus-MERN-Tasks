@@ -4,7 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My First Styled Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Georgia, serif;
+            background-color: #cc0;
+            margin: 40px;
+            padding: 20px;
+        }
+        
+        .container {
+            display: flex;
+            max-width: 800px;
+            background-color: #d4d44f;
+            padding: 20px;
+            border: 1px dotted black;
+        }
+        
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-right: 20px;
+        }
+        .nav-link {
+            display: block;
+            width: 120px;
+            padding: 8px;
+            background-color: white;
+            color: blue;
+            text-decoration: none;
+            font-size: 16px;
+            border-right: 10px solid black;
+        }
+        
+        .nav-link:hover {
+            background-color: lightgray;
+        }
+        
+        .content {
+            flex-grow: 1;
+        }
+        
+        h1 {
+            color: purple;
+        }
+        
+        p {
+            font-size: 16px;
+            color: black;
+        }
+        .footer {
+            color: purple;
+            font-style: italic;
+        }
+    </style>
 </head>
 <body>
 
@@ -28,59 +81,3 @@
 
 </body>
 </html>
-
-/* CSS */
-body {
-    font-family: Georgia, serif;
-    background-color: #cc0;
-    margin: 40px;
-    padding: 20px;
-}
-
-.container {
-    display: flex;
-    max-width: 800px;
-    background-color: #d4d44f;
-    padding: 20px;
-    border: 1px dotted black;
-}
-
-.sidebar {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-right: 20px;
-}
-
-.nav-link {
-    display: block;
-    width: 120px;
-    padding: 8px;
-    background-color: white;
-    color: blue;
-    text-decoration: none;
-    font-size: 16px;
-    border-right: 10px solid black;
-}
-
-.nav-link:hover {
-    background-color: lightgray;
-}
-
-.content {
-    flex-grow: 1;
-}
-
-h1 {
-    color: purple;
-}
-
-p {
-    font-size: 16px;
-    color: black;
-}
-
-.footer {
-    color: purple;
-    font-style: italic;
-}
