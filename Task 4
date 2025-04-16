@@ -1,9 +1,31 @@
 <!DOCTYPE html>
 <html>
-<head><title>Home</title></head>
+<head>
+  <title>Date and Time Display</title>
+</head>
 <body>
-  <h1>Welcome</h1>
-  <button onclick="window.location.href='register.html'">Register</button>
-  <button onclick="window.location.href='view.html'">View Users</button>
+  <button onclick="showDate()">show date</button>
+  <p id="dateDisplay"></p>
+
+  <br><br>
+
+  <button onclick="showTime()">show Time</button>
+  <p id="timeDisplay"></p>
+
+  <script>
+    function showDate() {
+      const date = new Date();
+      const day = date.getDate();
+      const month = date.toLocaleString('default', { month: 'long' }); // e.g., March
+      const year = date.getFullYear();
+      document.getElementById('dateDisplay').innerText = `${day}/${month}/${year}`;
+    }
+
+    function showTime() {
+      const now = new Date();
+      document.getElementById('timeDisplay').innerText = now.toString();
+    }
+  </script>
 </body>
 </html>
+
